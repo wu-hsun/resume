@@ -1,0 +1,231 @@
+@import url(reset.css);
+
+body{
+   background-color: #eee;
+   line-height: 1.6;
+   font-weight: bold;
+}
+
+.icon{
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
+
+   display: flex;
+   justify-content: space-around;
+}
+
+.line{
+	display: block;
+	width: 80%;
+	height: 3px;
+	background-color: orange;
+	margin: 0 auto;
+}
+
+h1{
+   background-image: url('../images/topBG.jpg');
+   line-height: 150px;
+   text-align: center;
+   color: white;
+   font-size: 4.5em;
+   margin-bottom: 50px;
+   text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+/* ---------header--------- */
+header{
+   width: 80%;
+   height: 450px;
+   margin: 0 auto 50px auto;
+   background-image: url('../images/titleBG.jpg');
+   background-size: cover;
+   background-position: center bottom;
+
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+header img{
+   width: 400x;
+   height: 400px;
+   margin-right: 50px;
+}
+
+header .introduction{
+   width: 400px;
+   height: 400px;
+   background-color: #fff;
+   padding: 25px 40px;
+   box-sizing: border-box;
+}
+
+header p{
+   font-size: 20px;
+}
+
+/* ---------myself--------- */
+.container{
+   width: 80%;
+   margin: 0 auto;
+   text-align: center;
+
+   display: flex;
+   justify-content: space-around;
+}
+
+.myself{
+   padding: 50px;
+}
+
+.myself h2{
+   font-size: 3.5em;
+   color: #8b7342;   
+   text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.myself h3{
+   font-size: 1.5em;
+}
+
+.img{
+   display: flex;
+   align-items: center;
+}
+
+.container img{
+   width: 425px;
+   height: 640px;
+}
+
+/* ---------pro--------- */
+.pro{
+   text-align: center;
+   padding: 50px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pro h4{
+   font-size: 3.5em;
+   color: #8b7342;   
+   text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.pro h5{
+   font-size: 1.5em;
+   line-height: 2;
+}
+
+.pro span{
+   color: orange;
+}
+
+/* ---------wrapper--------- */
+.wrapper{
+   width: 80%;
+   margin: 0 auto 50px auto;
+   text-align: center;
+   padding: 50px;
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+/* ---------wrapper exp--------- */
+.swiper{
+   width: 50%;
+   height: 500px;
+   margin: 0;
+
+   order: 2;
+}
+
+.swiper-slide{
+   font-size: 1.5em;
+   background-color: #eee;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* ---------wrapper video--------- */
+.exp{
+   width: 50%;
+
+   order: 1;
+}
+
+.exp h6{
+   font-size: 3.5em;
+   color: #8b7342;   
+   text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.video{
+   width: 640px;
+   height: 360px;
+   margin: 0 auto;
+}
+
+iframe{
+   width: 100%;
+   height: 100%;
+}
+
+/* ---------toTop--------- */
+.toTop{
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-color: darkred;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 50px;
+	bottom: 60px;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 2em;
+
+   z-index: 1;
+}
+
+.toTop .fa{
+	/* transition: .3s; */
+}
+
+.toTop:hover{
+	/* background-color: #333; */
+}
+
+.toTop:hover .fa{
+	/* transform: translateY(-5px); */
+}
+
+/* ---------RWD--------- */
+@media screen and (max-width: 1620px) {
+
+   .video{
+      width: 100%;
+      height: auto;
+      padding-bottom: 56.25%;
+      background-color: black;
+
+      position: relative;
+  }
+
+  iframe{
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+   
+}
