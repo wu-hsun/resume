@@ -59,10 +59,11 @@ header .introduction{
    background-color: #fff;
    padding: 25px 40px;
    box-sizing: border-box;
+   font-size: 20px;
 }
 
-header p{
-   font-size: 20px;
+header .introduction2{
+   display: none;
 }
 
 /* ---------myself--------- */
@@ -115,9 +116,29 @@ header p{
    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
 }
 
-.pro h5{
+.pro ul{
    font-size: 1.5em;
-   line-height: 2;
+   text-align: left;
+   margin-right: 20px;
+}
+
+.pro li{
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 20px;
+   position: relative;
+}
+
+.pro li:not(:last-child){
+   margin-bottom: 10px;
+}
+
+.pro i{
+   position: absolute;
+   top: -5px;
+   right: -5px;
+
+   color: red;
 }
 
 .pro span{
@@ -147,7 +168,6 @@ header p{
 
 .swiper-slide{
    font-size: 1.5em;
-   background-color: #eee;
 
    display: flex;
    justify-content: center;
@@ -161,7 +181,7 @@ header p{
    order: 1;
 }
 
-.exp h6{
+.exp h5{
    font-size: 3.5em;
    color: #8b7342;   
    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
@@ -198,19 +218,15 @@ iframe{
    z-index: 1;
 }
 
-.toTop .fa{
-	/* transition: .3s; */
-}
-
-.toTop:hover{
-	/* background-color: #333; */
-}
-
-.toTop:hover .fa{
-	/* transform: translateY(-5px); */
-}
-
 /* ---------RWD--------- */
+@media screen and (max-width: 1700px) {
+
+   .swiper-slide{
+      font-size: 1.4em;
+   }
+   
+}
+
 @media screen and (max-width: 1620px) {
 
    .video{
@@ -220,12 +236,324 @@ iframe{
       background-color: black;
 
       position: relative;
-  }
+   }
 
-  iframe{
+   iframe{
       position: absolute;
       left: 0;
       top: 0;
-  }
+   }
+   
+}
+
+@media screen and (max-width: 1536px) {
+
+   .swiper-slide{
+      font-size: 1.3em;
+   }
+   
+}
+
+@media screen and (max-width: 1440px) {
+
+   .myself h3{
+      font-size: 1.4em;
+   }
+
+   .swiper-slide{
+      font-size: 1.2em;
+   }
+   
+}
+
+@media screen and (max-width: 1366px) {
+
+   h1{
+      font-size: 4em;
+   }
+   
+   .swiper-slide{
+      font-size: 1.1em;
+   }
+
+   .myself h2{
+      font-size: 3em;
+   }
+
+   .pro h4{
+      font-size: 3em;
+   }
+
+   .exp h5{
+      font-size: 3em;
+   }
+
+}
+
+@media screen and (max-width: 1180px) {
+
+   header{
+      width: 100%;
+   }
+
+   .myself{
+      padding: 25px;
+   }
+
+   .myself h3{
+      font-size: 1.2em;
+   }
+
+   .container img{
+      width: 425px;
+      height: 600px;
+   }
+
+   .swiper-slide{
+      font-size: 1em;
+   }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+   header img{
+      width: 300x;
+      height: 300px;
+   }
+   
+   header .introduction{
+      width: 300px;
+      height: 300px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+   }
+   
+   header p{
+      font-size: 16px;
+   }
+
+   .myself{
+      padding: 5px;
+      margin: 20px 0;
+   }
+
+   .myself h2{
+      font-size: 2.8em;
+   }
+
+   .myself h3{
+      font-size: 1.08em;
+   }
+
+   .pro h4{
+      font-size: 2.8em;
+   }
+
+   .exp h5{
+      font-size: 2.8em;
+   }
+
+   .container img{
+      width: 300px;
+      height: 400px;
+   }
+
+   .wrapper{
+      flex-direction: column;
+   }
+
+   .swiper{
+      width: 100%;
+      height: 400px;
+      margin: 0;
+   
+      order: 2;
+   }
+   
+   .exp{
+      width: 100%;
+   
+      order: 1;
+   }
+
+   .swiper-slide{
+      font-size: 1.4em;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+
+   .img{
+      display: none;
+   }
+
+   .myself h3{
+      font-size: 1.5em;
+   }
+   
+}
+
+@media screen and (max-width: 640px) {
+
+   h1{
+      font-size: 3em;
+      margin-bottom: 30px;
+      line-height: 80px;
+   }
+
+   .icon{
+      width: 50%;
+      padding: 10px;
+   
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   }
+
+   .icon .fa-solid:not(:last-child){
+      margin-bottom: 5px;
+   }
+
+   header{
+      height: 300px;
+      margin: 0 auto 30px auto;
+   }
+
+   header img{
+      width: 250px;
+      height: 250px;
+      margin-right: 20px;
+   }
+
+   header .introduction{
+      width: 250px;
+      height: 250px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      font-size: 13px;
+   }
+
+   .myself{
+      padding: 5px;
+      margin: 20px 0;
+   }
+
+   .myself h3{
+      font-size: 1.3em;
+   }
+
+   .pro{
+      padding: 10px;
+      margin-bottom: 15px;
+   }
+   
+   .pro ul{
+      font-size: 1.2em;
+   }
+
+   .pro img{
+      width: 150px;
+   }
+
+   .wrapper{
+      width: 100%;
+      padding: 0px;     
+   }
+
+   .swiper{
+      height: 300px;
+   }
+
+   .swiper-slide{
+      font-size: 1.1em;
+   }
+
+   .exp{
+      width: 90%;
+   }
+
+   .toTop{
+      width: 50px;
+      height: 50px;
+      right: 30px;
+      bottom: 30px;
+      font-size: 1em;
+   }
+   
+}
+
+@media screen and (max-width: 428px) {
+
+   h1{
+      font-size: 2.5em;
+   }
+
+   .icon{
+      width: 70%;
+   }
+
+   header img{
+      width: 180px;
+      height: 180px;
+      margin-right: 10px;
+   }
+   
+   header .introduction{
+      display: none;
+   }
+
+   header .introduction2{
+      display: block;
+      font-size: 13px;
+   }
+
+   .myself h2{
+      font-size: 2.5em;
+   }
+
+   .myself h3{
+      font-size: 0.8em;
+   }
+
+   .pro h4{
+      font-size: 2.5em;
+   }
+
+   .exp h5{
+      font-size: 2.5em;
+   }
+   
+   .pro ul{
+      font-size: 0.9em;
+   }
+   
+   .pro li{
+      padding: 10px;
+   }
+
+   .pro img{
+      width: 80px;
+   }
+
+   .swiper{
+      height: 250px;
+   }
+
+   .swiper-slide{
+      font-size: 0.9em;
+   }
+
+   .toTop{
+      width: 35px;
+      height: 35px;
+   }
+   
+}
+
+@media screen and (max-width: 390px) {
+
+   
    
 }
