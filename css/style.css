@@ -508,21 +508,28 @@ iframe{
       display: block;
       font-size: 13px;
    }
+   
+   .container{
+      width: 90%;
+   }
 
    .myself h2{
       font-size: 2.5em;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
    }
 
    .myself h3{
-      font-size: 0.8em;
+      font-size: 0.95em;
    }
 
    .pro h4{
       font-size: 2.5em;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
    }
 
    .exp h5{
       font-size: 2.5em;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
    }
    
    .pro ul{
@@ -554,6 +561,86 @@ iframe{
 
 @media screen and (max-width: 390px) {
 
+   h1{
+      font-size: 2.2em;
+   }
+
+   .icon{
+      width: 75%;
+   }
+
+   header img{
+      width: 150px;
+      height: 150px;
+      margin-right: 10px;
+   }
+
+   header .introduction2{
+      font-size: 12px;
+   }
+
+   .container{
+      width: 90%;
+   }
+
+   .myself h2{
+      font-size: 2.2em;
+   }
+
+   .myself h3{
+      font-size: 0.85em;
+   }
+
+   .pro h4{
+      font-size: 2.2em;
+   }
+
+   .exp h5{
+      font-size: 2.2em;
+   }
    
+   .swiper-slide{
+      font-size: 0.8em;
+   }
+
+}
+
+@media screen and (max-width: 360px) {
+
+   h1{
+      font-size: 2em;
+   }
+
+   .icon{
+      width: 80%;
+   }
+
+   header{
+      height: 250px;
+   }
+
+   .container{
+      width: 90%;
+   }
+
+   .myself h2{
+      font-size: 2em; 
+   }
+
+   .myself h3{
+      font-size: 0.8em;
+   }
+
+   .pro h4{
+      font-size: 2em;
+   }
+
+   .exp h5{
+      font-size: 2em;
+   }
    
+   .swiper-slide{
+      font-size: 0.75em;
+   }
+
 }
