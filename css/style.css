@@ -386,6 +386,10 @@ iframe{
       width: 280px;
       height: 380px;
    }
+
+   .myself h3{
+      font-size: 1em;
+   }
    
 }
 
