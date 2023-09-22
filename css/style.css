@@ -327,10 +327,7 @@ iframe{
       height: 300px;
       padding: 10px 20px;
       box-sizing: border-box;
-   }
-   
-   header p{
-      font-size: 16px;
+      font-size: 1em;
    }
 
    .myself{
