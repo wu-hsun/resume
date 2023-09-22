@@ -383,7 +383,7 @@ iframe{
 @media screen and (max-width: 920px) {
 
    .container{
-      width: 85%;
+      width: 90%;
    }
 
    .container img{
@@ -521,10 +521,6 @@ iframe{
    header .introduction2{
       display: block;
       font-size: 13px;
-   }
-   
-   .container{
-      width: 90%;
    }
 
    .myself h2{
