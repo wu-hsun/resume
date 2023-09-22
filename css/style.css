@@ -387,8 +387,8 @@ iframe{
    }
 
    .container img{
-      width: 280px;
-      height: 380px;
+      width: 260px;
+      height: 360px;
    }
 
    .myself h3{
@@ -399,7 +399,7 @@ iframe{
 
 @media screen and (max-width: 768px) {
 
-   .img{
+   .container img{
       display: none;
    }
 
@@ -593,10 +593,6 @@ iframe{
       font-size: 12px;
    }
 
-   .container{
-      width: 90%;
-   }
-
    .myself h2{
       font-size: 2.2em;
    }
@@ -631,10 +627,6 @@ iframe{
 
    header{
       height: 250px;
-   }
-
-   .container{
-      width: 90%;
    }
 
    .myself h2{
