@@ -380,6 +380,15 @@ iframe{
 
 }
 
+@media screen and (max-width: 920px) {
+
+   .container img{
+      width: 280px;
+      height: 380px;
+   }
+   
+}
+
 @media screen and (max-width: 768px) {
 
    .img{
