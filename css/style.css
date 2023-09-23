@@ -2,7 +2,7 @@
 
 body{
    background-color: #eee;
-   line-height: 1.6;
+   line-height: 1.5;
    font-weight: bold;
 }
 
@@ -10,9 +10,18 @@ body{
    width: 80%;
    margin: 0 auto;
    padding: 20px;
+   font-size: 1.5em;
 
    display: flex;
    justify-content: space-around;
+}
+
+.icon .fa-location-dot{
+   margin-left: 3px;
+}
+
+.icon i{
+   margin-right: 10px;
 }
 
 .line{
@@ -33,37 +42,35 @@ h1{
    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 
-/* ---------header--------- */
-header{
+/* swiper1 */
+.swiper1{   
    width: 80%;
-   height: 450px;
    margin: 0 auto 50px auto;
-   background-image: url('../images/titleBG.jpg');
+}
+
+.swiper1 .swiper {
+   width: 100%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.swiper1 .swiper-slide {
+   background-position: center;
    background-size: cover;
-   background-position: center bottom;
-
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
+   width: 350px;
+   height: 350px;
 }
 
-header img{
-   width: 400x;
-   height: 400px;
-   margin-right: 50px;
+.swiper1 .swiper-slide img {
+   display: block;
+   width: 100%;
 }
 
-header .introduction{
-   width: 400px;
-   height: 400px;
-   background-color: #fff;
-   padding: 25px 40px;
-   box-sizing: border-box;
+.swiper1 .PD{
+   padding: 10px;
    font-size: 20px;
-}
-
-header .introduction2{
-   display: none;
+   box-sizing: border-box;
+   background-color: #fff;
 }
 
 /* ---------myself--------- */
@@ -145,10 +152,10 @@ header .introduction2{
    color: orange;
 }
 
-/* ---------wrapper--------- */
-.wrapper{
+/* ---------swiper2--------- */
+.swiper2{
    width: 80%;
-   margin: 0 auto 50px auto;
+   margin: 0 auto;
    text-align: center;
    padding: 50px;
    
@@ -157,8 +164,8 @@ header .introduction2{
    justify-content: space-around;
 }
 
-/* ---------wrapper exp--------- */
-.swiper{
+/* ---------swiper2 exp--------- */
+.swiper2 .swiper{
    width: 50%;
    height: 500px;
    margin: 0;
@@ -166,7 +173,7 @@ header .introduction2{
    order: 2;
 }
 
-.swiper-slide{
+.swiper2 .swiper-slide{
    font-size: 1.5em;
 
    display: flex;
@@ -174,28 +181,43 @@ header .introduction2{
    align-items: center;
 }
 
-/* ---------wrapper video--------- */
-.exp{
+/* ---------swiper2 video--------- */
+.swiper2 .exp{
    width: 50%;
 
    order: 1;
 }
 
-.exp h5{
+.swiper2 .exp h5{
    font-size: 3.5em;
    color: #8b7342;   
    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
 }
 
-.video{
+.swiper2 .video{
    width: 640px;
    height: 360px;
    margin: 0 auto;
 }
 
-iframe{
+.swiper2 iframe{
    width: 100%;
    height: 100%;
+}
+
+/* ---------footer--------- */
+footer{
+   height: 55px;
+   background-color: #ccc;
+}
+
+footer h6{
+   width: 80%;
+   margin: 0 auto;
+   text-align: center;
+   line-height: 55px;
+   font-size: 2em;
+   font-family: 'Skranji', cursive;
 }
 
 /* ---------toTop--------- */
@@ -280,6 +302,10 @@ iframe{
       font-size: 3em;
    }
 
+   .swiper2{
+      padding: 0px;
+   }
+
    .pro h4{
       font-size: 3em;
    }
@@ -291,6 +317,10 @@ iframe{
 }
 
 @media screen and (max-width: 1180px) {
+   
+   .icon{
+      font-size: 1.3em;
+   }
 
    header{
       width: 100%;
@@ -356,7 +386,7 @@ iframe{
       height: 400px;
    }
 
-   .wrapper{
+   .swiper2{
       flex-direction: column;
    }
 
@@ -382,6 +412,10 @@ iframe{
 
 @media screen and (max-width: 920px) {
 
+   .icon{
+      font-size: 1.2em;
+   }
+
    .container{
       width: 90%;
    }
@@ -399,6 +433,10 @@ iframe{
 
 @media screen and (max-width: 768px) {
 
+   .icon{
+      font-size: 1.1em;
+   }
+
    .container img{
       display: none;
    }
@@ -411,23 +449,16 @@ iframe{
 
 @media screen and (max-width: 640px) {
 
+   .icon{
+      font-size: 1em;
+      
+      justify-content: space-between;
+   }
+
    h1{
       font-size: 3em;
       margin-bottom: 30px;
       line-height: 80px;
-   }
-
-   .icon{
-      width: 50%;
-      padding: 10px;
-   
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-   }
-
-   .icon .fa-solid:not(:last-child){
-      margin-bottom: 5px;
    }
 
    header{
@@ -471,7 +502,7 @@ iframe{
       width: 150px;
    }
 
-   .wrapper{
+   .swiper2{
       width: 100%;
       padding: 0px;     
    }
@@ -505,7 +536,13 @@ iframe{
    }
 
    .icon{
-      width: 70%;
+      width: 90%;
+      padding: 10px;
+      font-size: 0.8em;
+   }
+
+   .icon i{
+      margin-right: 5px;
    }
 
    header img{
@@ -576,7 +613,8 @@ iframe{
    }
 
    .icon{
-      width: 75%;
+      width: 95%;
+      padding: 5px;
    }
 
    header img{
@@ -618,11 +656,21 @@ iframe{
    }
 
    .icon{
-      width: 80%;
+      width: 97%;
+      padding: 2px;
+      font-size: 0.75em;
+   }
+
+   .icon i{
+      margin-right: 5px;
    }
 
    header{
       height: 250px;
+   }
+
+   header .introduction2{
+      text-shadow: 3px 3px 3px rgba(255, 255, 255, 1);
    }
 
    .myself h2{
