@@ -386,7 +386,7 @@ footer h6{
       height: 400px;
    }
 
-   .swiper2{
+   .swiper-wrapper{
       flex-direction: column;
    }
 
