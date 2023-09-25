@@ -46,8 +46,6 @@ h1{
 .swiper1{   
    width: 80%;
    margin: 0 auto;
-
-   border: 1px solid red;
 }
 
 .swiper1 .swiper {
@@ -71,7 +69,6 @@ h1{
    padding: 10px;
    font-size: 20px;
    box-sizing: border-box;
-   background-color: #fff;
 }
 
 /* ---------container myself--------- */
@@ -82,7 +79,6 @@ h1{
 
    display: flex;
    justify-content: space-around;
-   border: 1px solid red;
 }
 
 .myself{
@@ -118,7 +114,6 @@ h1{
    display: flex;
    justify-content: center;
    align-items: center;
-   border: 1px solid red;
 }
 
 .skill{
@@ -175,7 +170,6 @@ h1{
    display: flex;
    align-items: center;
    justify-content: space-around;
-   border: 1px solid red;
 }
 
 /* ---------swiper2 exp--------- */
@@ -222,7 +216,6 @@ h1{
 footer{
    height: 55px;
    background-color: #ccc;
-   border: 1px solid red;
 }
 
 footer h6{
@@ -639,7 +632,7 @@ footer h6{
       width: 80px;
    }
 
-   .swiper{
+   .swiper2 .swiper{
       height: 250px;
    }
 
@@ -680,6 +673,10 @@ footer h6{
    .swiper2 .exp h5{
       font-size: 2.2em;
    }
+
+   .swiper2 .swiper{
+      height: 230px;
+   }
    
    .swiper2 .swiper-slide{
       font-size: 0.8em;
@@ -712,15 +709,6 @@ footer h6{
       padding: 10px;
       font-size: 12px;
    }
-
-   header{
-      height: 250px;
-   }
-
-   header .introduction2{
-      text-shadow: 3px 3px 3px rgba(255, 255, 255, 1);
-   }
-
    .myself h2{
       font-size: 2em; 
    }
