@@ -132,8 +132,7 @@ h1{
 }
 
 .pic2{
-	background-image: url('../images/1.jpg');
-   background-position: -160px;
+	background-image: url('../images/3.jpg');
 
 	grid-column-start: 1;
 	grid-column-end: 3;
@@ -374,10 +373,6 @@ footer h6{
       height: 600px;
    }
 
-   .pic2{
-      background-position: -160px;
-   }
-
    .pic3{
       background-position: -40px;
    }
@@ -416,10 +411,6 @@ footer h6{
       height: 550px;
    }
 
-   .pic2{
-      background-position: -160px;
-   }
-
    .pro h4{
       font-size: 3em;
    }
@@ -446,10 +437,6 @@ footer h6{
 
    .myself h3{
       font-size: 1.2em;
-   }
-   
-   .pic2{
-      background-position: -150px;
    }
 
    .foot .footL{
@@ -502,10 +489,6 @@ footer h6{
    .grid{
       width: 400px;
       height: 500px;
-   }
-
-   .pic2{
-      background-position: -140px;
    }
 
    .pic3{
@@ -585,10 +568,6 @@ footer h6{
    .grid{
       width: 330px;
       height: 430px;
-   }
-
-   .pic2{
-      background-position: -130px;
    }
 
    .myself h3{
