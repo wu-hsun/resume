@@ -515,6 +515,10 @@ footer h6{
       justify-content: space-between;
    }
 
+   .line{
+      margin: 30px auto 0 auto;
+   }
+
    h1{
       font-size: 3em;
       margin-bottom: 30px;
@@ -583,6 +587,10 @@ footer h6{
 
    .icon i{
       margin-right: 5px;
+   }
+
+   .line{
+      margin: 20px auto 0 auto;
    }
 
    h1{
