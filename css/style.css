@@ -79,6 +79,7 @@ h1{
 
    display: flex;
    justify-content: space-around;
+   align-items: center;
 }
 
 .myself{
@@ -95,14 +96,59 @@ h1{
    font-size: 1.5em;
 }
 
-.img{
-   display: flex;
-   align-items: center;
+.grid{
+   width: 600px;
+   height: 700px;
+	background-color: #fff;
+	outline: 1px solid #ccc;
+	margin: 0 auto;
+	padding: 5px;
+
+   display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 5px;
 }
 
-.img img{
-   width: 425px;
-   height: 640px;
+.grid > *{
+	/* padding: 20px; */
+	background-size: cover;
+}
+
+.pic1{
+	background-image: url('../images/5.jpg');
+   background-position: center;
+
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*grid-column: 1 / 4;*/
+}
+
+.pic2{
+	background-image: url('../images/1.jpg');
+   background-position: -160px;
+
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+.pic3{
+	background-image: url('../images/7.jpg');
+   background-position: -50px;
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 4;
 }
 
 .foot{
@@ -299,7 +345,6 @@ footer h6{
 
    z-index: 1;
 }
-
 /* ---------RWD--------- */
 @media screen and (max-width: 1700px) {
    .swiper2 .video{
@@ -323,6 +368,19 @@ footer h6{
 }
 
 @media screen and (max-width: 1536px) {
+
+   .grid{
+      width: 500px;
+      height: 600px;
+   }
+
+   .pic2{
+      background-position: -160px;
+   }
+
+   .pic3{
+      background-position: -40px;
+   }
 
    .swiper2 .swiper-slide{
       font-size: 1.4em;
@@ -353,9 +411,13 @@ footer h6{
       font-size: 3em;
    }
 
-   .img img{
-      width: 420px;
-      height: 600px;
+   .grid{
+      width: 450px;
+      height: 550px;
+   }
+
+   .pic2{
+      background-position: -160px;
    }
 
    .pro h4{
@@ -386,17 +448,16 @@ footer h6{
       font-size: 1.2em;
    }
    
+   .pic2{
+      background-position: -150px;
+   }
+
    .foot .footL{
       height: 40px;
    }
    
    .foot .footR{
       height: 40px;
-   }
-
-   .img img{
-      width: 400px;
-      height: 565px;
    }
 
    .swiper2 .swiper{
@@ -438,6 +499,19 @@ footer h6{
       font-size: 1.08em;
    }
    
+   .grid{
+      width: 400px;
+      height: 500px;
+   }
+
+   .pic2{
+      background-position: -140px;
+   }
+
+   .pic3{
+      background-position: -35px;
+   }
+
    .foot .footL{
       bottom:-5px;
    }
@@ -456,11 +530,6 @@ footer h6{
 
    .swiper2 .exp h5{
       font-size: 2.8em;
-   }
-
-   .img img{
-      width: 300px;
-      height: 400px;
    }
 
    .swiper2{
@@ -513,9 +582,13 @@ footer h6{
       width: 90%;
    }
 
-   .img img{
-      width: 260px;
-      height: 360px;
+   .grid{
+      width: 350px;
+      height: 450px;
+   }
+
+   .pic2{
+      background-position: -125px;
    }
 
    .myself h3{
@@ -547,7 +620,7 @@ footer h6{
       line-height: 100px;
    }
 
-   .img{
+   .grid{
       display: none;
    }   
 
